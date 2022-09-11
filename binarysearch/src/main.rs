@@ -11,13 +11,13 @@ fn main() {
 }
 
 fn bruteforce(nums: Vec<i32>, target: i32) -> i32 {
-
+    let mut result: i32 = -1;
     for i in 0..nums.len() - 1  { 
         if nums[i] == target {
-            return i as i32;
+            result = i as i32;
         }
     }
-    return -1;
+    return result;
 }
 
 // impl Solution {
